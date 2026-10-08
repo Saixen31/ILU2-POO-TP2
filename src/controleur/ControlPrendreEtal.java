@@ -13,8 +13,7 @@ public class ControlPrendreEtal {
 	}
 
 	public boolean resteEtals() {
-		//TODO a completer, attention le retour ne dit pas etre false :-)
-		return false;
+		return rechercheEtalVide()
 	}
 
 	public int prendreEtal(String nomVendeur, String produit, int nbProduit) {
@@ -24,7 +23,6 @@ public class ControlPrendreEtal {
 	}
 
 	public boolean verifierIdentite(String nomVendeur) {
-		//TODO a completer, attention le retour ne dit pas etre false :-)
-		return false;
+		return village.trouverHabitant(nomVendeur) != null;
 	}
 }
